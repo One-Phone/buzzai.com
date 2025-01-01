@@ -1,0 +1,252 @@
+:root {
+    --breakpoint-xxl: 1920px;
+    --breakpoint-xl: 1440px;
+    --breakpoint-lg: 1280px;
+    --breakpoint-md: 1024px;
+    --breakpoint-md-s: 992px;
+    --breakpoint-sm: 768px;
+    --breakpoint-xs: 512px;
+    --breakpoint-xxs: 390px
+}
+
+@keyframes loading {
+    0% {
+        height: 64px;
+        top: 8px
+    }
+
+    to {
+        height: 32px;
+        top: 24px
+    }
+}
+
+.plans,.wp-block .plans {
+    padding: 45px 24px 48px
+}
+
+@media(max-width: 1280px) {
+    .plans,.wp-block .plans {
+        padding:96px 25px 48px
+    }
+}
+
+@media(max-width: 1024px) {
+    .plans,.wp-block .plans {
+        padding:39px 25px 36px
+    }
+}
+
+.plans__title,.wp-block .plans__title {
+    padding-top: 32px;
+    text-align: center
+}
+
+@media(max-width: 1024px) {
+    .plans__title,.wp-block .plans__title {
+        padding:32px
+    }
+}
+
+.plans-wrapper,.wp-block .plans-wrapper {
+    margin: auto;
+    max-width: 1280px
+}
+
+.plans-container,.wp-block .plans-container {
+    align-items: stretch;
+    display: flex;
+    gap: 32px;
+    margin: auto;
+    max-width: 1280px;
+    padding-top: 100px
+}
+
+@media(max-width: 1024px) {
+    .plans-container,.wp-block .plans-container {
+        flex-direction:column;
+        padding-top: 30px
+    }
+
+    .plans-container .popular-plan-wrapper,.wp-block .plans-container .popular-plan-wrapper {
+        margin-top: 46px
+    }
+}
+
+@media(max-width: 768px) {
+    .plans-container,.wp-block .plans-container {
+        padding-top:0
+    }
+}
+
+.plans .plan,.wp-block .plans .plan {
+    flex: 1 1 0;
+    position: relative
+}
+
+.plans .plan__title,.wp-block .plans .plan__title {
+    font-size: 36px;
+    font-weight: 500;
+    letter-spacing: -.54px;
+    line-height: 166.667%;
+    padding-bottom: 8px
+}
+
+.plans .plan__subtitle,.wp-block .plans .plan__subtitle {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: -.27px;
+    line-height: 156%;
+    padding-bottom: 32px;
+    width: 86%
+}
+
+.plans .plan__price-text,.wp-block .plans .plan__price-text {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 150%;
+    padding-bottom: 2px
+}
+
+.plans .plan__price,.wp-block .plans .plan__price {
+    line-height: 120%;
+    padding-bottom: 2px
+}
+
+.plans .plan__price-info,.wp-block .plans .plan__price-info {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 150%;
+    padding-bottom: 32px
+}
+
+.plans .plan__price-info--main,.wp-block .plans .plan__price-info--main {
+    text-transform: uppercase
+}
+
+.plans .plan__price-info--additional,.wp-block .plans .plan__price-info--additional {
+    font-size: 12px;
+    text-transform: uppercase
+}
+
+.plans .plan__button,.wp-block .plans .plan__button {
+    width: 80%
+}
+
+@media(max-width: 1280px) {
+    .plans .plan__button,.wp-block .plans .plan__button {
+        width:100%
+    }
+}
+
+.plans .plan-features,.wp-block .plans .plan-features {
+    list-style: none;
+    margin: 0;
+    padding: 0 0 20px
+}
+
+.plans .plan-features__item,.wp-block .plans .plan-features__item {
+    padding-bottom: 20px;
+    padding-left: 20px
+}
+
+.plans .plan-features .plan-feature,.wp-block .plans .plan-features .plan-feature {
+    display: flex;
+    margin: 0;
+    padding: 0
+}
+
+.plans .plan-features .plan-feature__marker *,.wp-block .plans .plan-features .plan-feature__marker * {
+    margin-right: 8px
+}
+
+.plans .plan-features .plan-feature__text,.wp-block .plans .plan-features .plan-feature__text {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: -.27px;
+    line-height: 156%;
+    padding-bottom: 15px
+}
+
+.plans .plan__wrapper,.wp-block .plans .plan__wrapper {
+    align-items: flex-start;
+    border-radius: 32px 32px 0 32px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    padding: 31px 32px
+}
+
+@media(max-width: 1024px) {
+    .plans .plan__wrapper,.wp-block .plans .plan__wrapper {
+        padding:33px 22px
+    }
+}
+
+.plans .popular-plan,.wp-block .plans .popular-plan {
+    position: relative;
+    z-index: 2
+}
+
+.plans .popular-plan__label,.wp-block .plans .popular-plan__label {
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: -46px;
+    z-index: 1
+}
+
+.plans .popular-plan .plan-feature__marker *,.wp-block .plans .popular-plan .plan-feature__marker * {
+    fill: var(--sk-color-second-extra-light)
+}
+
+.plans .popular-label,.wp-block .plans .popular-label {
+    align-items: baseline;
+    background-color: var(--sk-color-third-light);
+    border-radius: 32px 32px 0 0;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    padding: 8px 8px 60px
+}
+
+.plans .popular-label__text,.wp-block .plans .popular-label__text {
+    color: var(--sk-color-second);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: -.24px;
+    line-height: 200%;
+    text-align: center;
+    text-transform: uppercase
+}
+
+.plans-content,.wp-block .plans-content {
+    margin: auto;
+    max-width: 1280px
+}
+
+.plans-text,.wp-block .plans-text {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: -.27px;
+    line-height: 156%;
+    margin: auto;
+    padding-top: 40px;
+    text-align: center;
+    width: 50%
+}
+
+@media(max-width: 1024px) {
+    .plans-text,.wp-block .plans-text {
+        padding-top:29px;
+        width: 90%
+    }
+}
+
+/*# sourceMappingURL=plans.css.map*/

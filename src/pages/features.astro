@@ -1,0 +1,990 @@
+---
+import BaseLayout from "../layouts/Layout.astro";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+import "../styles/common.css";
+import { config } from '../config';
+---
+
+<BaseLayout
+  title="Features - Hushed | Secure second and temporary phone number app"
+  description="A private Hushed number includes free premium features like anonymous calling, custom voicemail, call forwarding, and more."
+  og_title="Features - Hushed | Secure second and temporary phone number app"
+  og_description="A private Hushed number includes free premium features like anonymous calling, custom voicemail, call forwarding, and more."
+  og_url={config.urls.origin + '/features'}
+  og_site_name="Hushed | Secure second and temporary phone number app"
+  og_image={config.urls.origin + '/images/hushed-app-features.png'}
+  og_image_width="1099"
+  og_image_height="535"
+  og_image_type="image/png"
+>
+  <slot name="head">
+    <!-- Page-specific head content -->
+    <link
+      rel="stylesheet"
+      id="block-tabs-info-css"
+      href={config.urls.origin + '/css/blocks/tabs-info.css'}
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="block-shuffled-text-and-image-css"
+      href={config.urls.origin + '/css/blocks/shuffled-text-and-image.css'}
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="block-search-area-code-css"
+      href={config.urls.origin + '/css/blocks/search-area-code.css'}
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="app-css"
+      href={config.urls.origin + '/css/app.css'}
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="template-index-css"
+      href={config.urls.origin + '/css/templates/index.css'}
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="block-text-with-image-css"
+      href={config.urls.origin + '/css/blocks/text-with-image.css'}
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="block-plans-css"
+      href={config.urls.origin + '/css/blocks/plans.css'}
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="block-banner-cta-css"
+      href={config.urls.origin + '/css/blocks/banner-cta.css'}
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="block-features-grid-layout-css"
+      href={config.urls.origin + '/css/blocks/features-grid-layout.css'}
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="block-faq-css"
+      href={config.urls.origin + '/css/blocks/faq.css'}
+      type="text/css"
+      media="all"
+    />
+  </slot>
+
+  <body
+    class="features loading-fonts"
+    data-template="base.twig"
+    data-bg-color="bg-primary"
+  >
+    <Header />
+    <div class="overlay-mob-menu load bg-primary"></div>
+    <main role="main" class="content-wrapper">
+
+      <section
+        data-trigger-start="-10% 70%"
+        data-trigger-end="-10% 70%"
+        data-gsap-from='{"y": "20%", "duration": 0.2, "opacity": "0"}'
+        data-gsap-to='{"y": "0", "duration": 0.2, "opacity": "1"}'
+        class="shuffled-text-and-image gutenberg-block bg-block-animation gsap-animation bg-second"
+      >
+        <div class="sk-container sk-container--sm">
+          <h1 class="shuffled-text-and-image__title">
+            <span class="shuffled-text-and-image__title-row">
+              <span
+                class="shuffled-text-and-image__img shuffled-text-and-image__img--1"
+              >
+                <picture>
+                  <source
+                    type="image/webp"
+                    sizes="300px"
+                    srcset="https://hushed.com/wp-content/uploads/2023/11/Area1_Applications-1-1-100x0-c-default.webp 100w, https://hushed.com/wp-content/uploads/2023/11/Area1_Applications-1-1.webp 171w"
+                  />
+                  <source
+                    type="image/jpeg"
+                    sizes="300px"
+                    srcset="https://hushed.com/wp-content/uploads/2023/11/Area1_Applications-1-1-100x0-c-default.jpg 100w, https://hushed.com/wp-content/uploads/2023/11/Area1_Applications-1-1.jpg 171w"
+                  />
+                  <img
+                    decoding="async"
+                    class=""
+                    width="171"
+                    height="116"
+                    alt="Area1_Applications 1"
+                    src="https://hushed.com/wp-content/uploads/2023/11/Area1_Applications-1-1.jpg"
+                    loading="eager"
+                  />
+                </picture>
+              </span>
+
+              <span
+                class="sk-text--h1 sk-font-primary shuffled-text-and-image__word"
+              >
+                Amplify
+              </span>
+
+              <span
+                class="shuffled-text-and-image__img shuffled-text-and-image__img--3"
+              >
+                <picture>
+                  <source
+                    type="image/webp"
+                    sizes="300px"
+                    srcset="https://hushed.com/wp-content/uploads/2023/11/images-11-1-1-100x0-c-default.webp 100w, https://hushed.com/wp-content/uploads/2023/11/images-11-1-1.webp 171w"
+                  />
+                  <source
+                    type="image/jpeg"
+                    sizes="300px"
+                    srcset="https://hushed.com/wp-content/uploads/2023/11/images-11-1-1-100x0-c-default.jpg 100w, https://hushed.com/wp-content/uploads/2023/11/images-11-1-1.jpg 171w"
+                  />
+                  <img
+                    decoding="async"
+                    class=""
+                    width="171"
+                    height="116"
+                    alt="images-11 1"
+                    src="https://hushed.com/wp-content/uploads/2023/11/images-11-1-1.jpg"
+                    loading="eager"
+                  />
+                </picture>
+              </span>
+            </span>
+            <span class="shuffled-text-and-image__title-row">
+              <span
+                class="sk-text--h1 sk-font-primary shuffled-text-and-image__word"
+              >
+                your
+              </span>
+
+              <span
+                class="shuffled-text-and-image__img shuffled-text-and-image__img--2"
+              >
+                <picture>
+                  <source
+                    type="image/webp"
+                    sizes="300px"
+                    srcset="https://hushed.com/wp-content/uploads/2023/11/images-09-1-1-100x0-c-default.webp 100w, https://hushed.com/wp-content/uploads/2023/11/images-09-1-1-200x0-c-default.webp 200w, https://hushed.com/wp-content/uploads/2023/11/images-09-1-1.webp 234w"
+                  />
+                  <source
+                    type="image/jpeg"
+                    sizes="300px"
+                    srcset="https://hushed.com/wp-content/uploads/2023/11/images-09-1-1-100x0-c-default.jpg 100w, https://hushed.com/wp-content/uploads/2023/11/images-09-1-1-200x0-c-default.jpg 200w, https://hushed.com/wp-content/uploads/2023/11/images-09-1-1.jpg 234w"
+                  />
+                  <img
+                    fetchpriority="high"
+                    decoding="async"
+                    class=""
+                    width="234"
+                    height="116"
+                    alt="images-09 1"
+                    src="https://hushed.com/wp-content/uploads/2023/11/images-09-1-1.jpg"
+                    loading="eager"
+                  />
+                </picture>
+              </span>
+
+              <span
+                class="sk-text--h1 sk-font-primary shuffled-text-and-image__word"
+              >
+                anonymity.
+              </span>
+            </span>
+          </h1>
+
+          <p class="shuffled-text-and-image__text">
+            Your life, your privacy. Text and call on your own terms, using
+            secondary phone numbers from Hushed.
+          </p>
+        </div>
+      </section>
+
+      <section
+        data-trigger-start="-16% 75%"
+        data-trigger-end="-16% 75%"
+        data-gsap-from='{"y": "20%", "duration": 0.2, "opacity": "0"}'
+        data-gsap-to='{"y": "0", "duration": 0.2, "opacity": "1"}'
+        class="tabs-info gutenberg-block bg-block-animation gsap-animation hide-on-load bg-primary-extra-light"
+      >
+        <div class="tabs-info__container">
+          <div
+            class="tabs-info__wrapper gsap-animation-item-timeline"
+            data-gsap-from='{"y": "30%", "duration": 0.3, "opacity": "0"}'
+            data-gsap-to='{"y": "0", "duration": 0.3, "opacity": "1"}'
+          >
+            <h2 class="tabs-info__title sk-font-primary sk-text--h3">
+              Phone numbers for everything
+            </h2>
+
+            <div class="tabs-info__tab-container">
+              <div class="tabs-info__tab-item tabs-item bg-white active">
+                <button class="tabs-item__title">Dating</button>
+                <div class="tabs-item__info">
+                  <div class="wrapper-info">
+                    <div class="tabs-item__text">
+                      <p>
+                        Not every first date is going to be “the one.” If you’re
+                        online dating or going in blind, give out your Hushed
+                        number so you can <a
+                          href="https://hushed.com/tips-for-online-dating-safety/"
+                          >keep yourself safe</a
+                        > and protect your privacy.
+                      </p>
+                    </div>
+                    <div class="tabs-item__image">
+                      <picture>
+                        <source
+                          type="image/webp"
+                          sizes="(max-width: 1024px) calc(100vw - 100px), 875px"
+                          srcset="https://hushed.com/wp-content/uploads/2023/11/Online-Dating_-Dont-Make-This-Mistake-100x0-c-default.webp 100w, https://hushed.com/wp-content/uploads/2023/11/Online-Dating_-Dont-Make-This-Mistake-200x0-c-default.webp 200w, https://hushed.com/wp-content/uploads/2023/11/Online-Dating_-Dont-Make-This-Mistake-400x0-c-default.webp 400w, https://hushed.com/wp-content/uploads/2023/11/Online-Dating_-Dont-Make-This-Mistake-600x0-c-default.webp 600w, https://hushed.com/wp-content/uploads/2023/11/Online-Dating_-Dont-Make-This-Mistake-800x0-c-default.webp 800w, https://hushed.com/wp-content/uploads/2023/11/Online-Dating_-Dont-Make-This-Mistake-1000x0-c-default.webp 1000w, https://hushed.com/wp-content/uploads/2023/11/Online-Dating_-Dont-Make-This-Mistake-1200x0-c-default.webp 1200w, https://hushed.com/wp-content/uploads/2023/11/Online-Dating_-Dont-Make-This-Mistake.webp 1700w"
+                        />
+                        <source
+                          type="image/jpeg"
+                          sizes="(max-width: 1024px) calc(100vw - 100px), 875px"
+                          srcset="https://hushed.com/wp-content/uploads/2023/11/Online-Dating_-Dont-Make-This-Mistake-100x0-c-default.jpg 100w, https://hushed.com/wp-content/uploads/2023/11/Online-Dating_-Dont-Make-This-Mistake-200x0-c-default.jpg 200w, https://hushed.com/wp-content/uploads/2023/11/Online-Dating_-Dont-Make-This-Mistake-400x0-c-default.jpg 400w, https://hushed.com/wp-content/uploads/2023/11/Online-Dating_-Dont-Make-This-Mistake-600x0-c-default.jpg 600w, https://hushed.com/wp-content/uploads/2023/11/Online-Dating_-Dont-Make-This-Mistake-800x0-c-default.jpg 800w, https://hushed.com/wp-content/uploads/2023/11/Online-Dating_-Dont-Make-This-Mistake-1000x0-c-default.jpg 1000w, https://hushed.com/wp-content/uploads/2023/11/Online-Dating_-Dont-Make-This-Mistake-1200x0-c-default.jpg 1200w, https://hushed.com/wp-content/uploads/2023/11/Online-Dating_-Dont-Make-This-Mistake.jpg 1700w"
+                        />
+                        <img
+                          fetchpriority="high"
+                          decoding="async"
+                          class="tab-image"
+                          width="1700"
+                          height="1133"
+                          alt="|Doing this with someone you’re dating online might not sound like a big deal"
+                          src="https://hushed.com/wp-content/uploads/2023/11/Online-Dating_-Dont-Make-This-Mistake.jpg"
+                          loading="eager"
+                        />
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tabs-info__tab-item tabs-item bg-third-light">
+                <button class="tabs-item__title">Selling</button>
+                <div class="tabs-item__info">
+                  <div class="wrapper-info">
+                    <div class="tabs-item__text">
+                      <p>
+                        Selling your couch? <a
+                          href="https://hushed.com/use-a-temp-phone-number-for-your-sublease/"
+                          >Subleasing your apartment?</a
+                        > Use a Hushed number in the ad, let all the weirdos call
+                        and text, then cancel the number once the transaction&#8217;s
+                        complete.
+                      </p>
+                    </div>
+                    <div class="tabs-item__image">
+                      <picture>
+                        <source
+                          type="image/webp"
+                          sizes="(max-width: 1024px) calc(100vw - 100px), 875px"
+                          srcset="https://hushed.com/wp-content/uploads/2023/11/temp-phone-number-sublease-100x0-c-default.webp 100w, https://hushed.com/wp-content/uploads/2023/11/temp-phone-number-sublease-200x0-c-default.webp 200w, https://hushed.com/wp-content/uploads/2023/11/temp-phone-number-sublease-400x0-c-default.webp 400w, https://hushed.com/wp-content/uploads/2023/11/temp-phone-number-sublease-600x0-c-default.webp 600w, https://hushed.com/wp-content/uploads/2023/11/temp-phone-number-sublease-800x0-c-default.webp 800w, https://hushed.com/wp-content/uploads/2023/11/temp-phone-number-sublease-1000x0-c-default.webp 1000w, https://hushed.com/wp-content/uploads/2023/11/temp-phone-number-sublease-1200x0-c-default.webp 1200w, https://hushed.com/wp-content/uploads/2023/11/temp-phone-number-sublease.webp 1700w"
+                        />
+                        <source
+                          type="image/jpeg"
+                          sizes="(max-width: 1024px) calc(100vw - 100px), 875px"
+                          srcset="https://hushed.com/wp-content/uploads/2023/11/temp-phone-number-sublease-100x0-c-default.jpg 100w, https://hushed.com/wp-content/uploads/2023/11/temp-phone-number-sublease-200x0-c-default.jpg 200w, https://hushed.com/wp-content/uploads/2023/11/temp-phone-number-sublease-400x0-c-default.jpg 400w, https://hushed.com/wp-content/uploads/2023/11/temp-phone-number-sublease-600x0-c-default.jpg 600w, https://hushed.com/wp-content/uploads/2023/11/temp-phone-number-sublease-800x0-c-default.jpg 800w, https://hushed.com/wp-content/uploads/2023/11/temp-phone-number-sublease-1000x0-c-default.jpg 1000w, https://hushed.com/wp-content/uploads/2023/11/temp-phone-number-sublease-1200x0-c-default.jpg 1200w, https://hushed.com/wp-content/uploads/2023/11/temp-phone-number-sublease.jpg 1700w"
+                        />
+                        <img
+                          decoding="async"
+                          class="tab-image"
+                          width="1700"
+                          height="1227"
+                          alt="|If you need to sublease your place"
+                          src="https://hushed.com/wp-content/uploads/2023/11/temp-phone-number-sublease.jpg"
+                          loading="eager"
+                        />
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tabs-info__tab-item tabs-item bg-third-medium">
+                <button class="tabs-item__title">Family</button>
+                <div class="tabs-item__info">
+                  <div class="wrapper-info">
+                    <div class="tabs-item__text">
+                      <p>
+                        Want to call family members in another country? Save
+                        money by getting a Hushed number in their area code, and <a
+                          href="https://hushed.com/live-far-away-from-family-cheap-calling-hack/"
+                          >it&#8217;s like making a local call</a
+                        >.
+                      </p>
+                    </div>
+                    <div class="tabs-item__image">
+                      <picture>
+                        <source
+                          type="image/webp"
+                          sizes="(max-width: 1024px) calc(100vw - 100px), 875px"
+                          srcset="https://hushed.com/wp-content/uploads/2024/02/Hushed-for-family-100x0-c-default.webp 100w, https://hushed.com/wp-content/uploads/2024/02/Hushed-for-family-200x0-c-default.webp 200w, https://hushed.com/wp-content/uploads/2024/02/Hushed-for-family-400x0-c-default.webp 400w, https://hushed.com/wp-content/uploads/2024/02/Hushed-for-family-600x0-c-default.webp 600w, https://hushed.com/wp-content/uploads/2024/02/Hushed-for-family-800x0-c-default.webp 800w, https://hushed.com/wp-content/uploads/2024/02/Hushed-for-family-1000x0-c-default.webp 1000w, https://hushed.com/wp-content/uploads/2024/02/Hushed-for-family-1200x0-c-default.webp 1200w, https://hushed.com/wp-content/uploads/2024/02/Hushed-for-family.webp 1800w"
+                        />
+                        <source
+                          type="image/jpeg"
+                          sizes="(max-width: 1024px) calc(100vw - 100px), 875px"
+                          srcset="https://hushed.com/wp-content/uploads/2024/02/Hushed-for-family-100x0-c-default.jpg 100w, https://hushed.com/wp-content/uploads/2024/02/Hushed-for-family-200x0-c-default.jpg 200w, https://hushed.com/wp-content/uploads/2024/02/Hushed-for-family-400x0-c-default.jpg 400w, https://hushed.com/wp-content/uploads/2024/02/Hushed-for-family-600x0-c-default.jpg 600w, https://hushed.com/wp-content/uploads/2024/02/Hushed-for-family-800x0-c-default.jpg 800w, https://hushed.com/wp-content/uploads/2024/02/Hushed-for-family-1000x0-c-default.jpg 1000w, https://hushed.com/wp-content/uploads/2024/02/Hushed-for-family-1200x0-c-default.jpg 1200w, https://hushed.com/wp-content/uploads/2024/02/Hushed-for-family.jpg 1800w"
+                        />
+                        <img
+                          decoding="async"
+                          class="tab-image"
+                          width="1800"
+                          height="1200"
+                          alt="Hushed for family"
+                          src="https://hushed.com/wp-content/uploads/2024/02/Hushed-for-family.jpg"
+                          loading="eager"
+                        />
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tabs-info__tab-item tabs-item bg-second-extra-light">
+                <button class="tabs-item__title">Traveling</button>
+                <div class="tabs-item__info">
+                  <div class="wrapper-info">
+                    <div class="tabs-item__text">
+                      <p>
+                        Hushed is perfect for cheap calling and texting <a
+                          href="https://hushed.com/travel-esim-phone-number/"
+                          >when you&#8217;re travelling</a
+                        >. Get a local Hushed number for your destination, and <a
+                          href="https://alosim.onelink.me/NWPY/hushed"
+                          >pair it with an eSIM</a
+                        > so you always have data.
+                      </p>
+                    </div>
+                    <div class="tabs-item__image">
+                      <picture>
+                        <source
+                          type="image/webp"
+                          sizes="(max-width: 1024px) calc(100vw - 100px), 875px"
+                          srcset="https://hushed.com/wp-content/uploads/2024/02/Use-Hushed-for-travel-calling-and-texting-100x0-c-default.webp 100w, https://hushed.com/wp-content/uploads/2024/02/Use-Hushed-for-travel-calling-and-texting-200x0-c-default.webp 200w, https://hushed.com/wp-content/uploads/2024/02/Use-Hushed-for-travel-calling-and-texting-400x0-c-default.webp 400w, https://hushed.com/wp-content/uploads/2024/02/Use-Hushed-for-travel-calling-and-texting-600x0-c-default.webp 600w, https://hushed.com/wp-content/uploads/2024/02/Use-Hushed-for-travel-calling-and-texting-800x0-c-default.webp 800w, https://hushed.com/wp-content/uploads/2024/02/Use-Hushed-for-travel-calling-and-texting-1000x0-c-default.webp 1000w, https://hushed.com/wp-content/uploads/2024/02/Use-Hushed-for-travel-calling-and-texting-1200x0-c-default.webp 1200w, https://hushed.com/wp-content/uploads/2024/02/Use-Hushed-for-travel-calling-and-texting.webp 1600w"
+                        />
+                        <source
+                          type="image/jpeg"
+                          sizes="(max-width: 1024px) calc(100vw - 100px), 875px"
+                          srcset="https://hushed.com/wp-content/uploads/2024/02/Use-Hushed-for-travel-calling-and-texting-100x0-c-default.jpg 100w, https://hushed.com/wp-content/uploads/2024/02/Use-Hushed-for-travel-calling-and-texting-200x0-c-default.jpg 200w, https://hushed.com/wp-content/uploads/2024/02/Use-Hushed-for-travel-calling-and-texting-400x0-c-default.jpg 400w, https://hushed.com/wp-content/uploads/2024/02/Use-Hushed-for-travel-calling-and-texting-600x0-c-default.jpg 600w, https://hushed.com/wp-content/uploads/2024/02/Use-Hushed-for-travel-calling-and-texting-800x0-c-default.jpg 800w, https://hushed.com/wp-content/uploads/2024/02/Use-Hushed-for-travel-calling-and-texting-1000x0-c-default.jpg 1000w, https://hushed.com/wp-content/uploads/2024/02/Use-Hushed-for-travel-calling-and-texting-1200x0-c-default.jpg 1200w, https://hushed.com/wp-content/uploads/2024/02/Use-Hushed-for-travel-calling-and-texting.jpg 1600w"
+                        />
+                        <img
+                          decoding="async"
+                          class="tab-image"
+                          width="1600"
+                          height="1067"
+                          alt="Use Hushed for travel calling and texting"
+                          src="https://hushed.com/wp-content/uploads/2024/02/Use-Hushed-for-travel-calling-and-texting.jpg"
+                          loading="eager"
+                        />
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tabs-info__tab-item tabs-item bg-second-dark">
+                <button class="tabs-item__title">Shopping</button>
+                <div class="tabs-item__info">
+                  <div class="wrapper-info">
+                    <div class="tabs-item__text">
+                      <p>
+                        <a
+                          href="https://hushed.com/use-an-online-phone-number-for-shopping/"
+                          >Stores always want your phone number</a
+                        > for receipts, returns, and promotions. Give them your Hushed
+                        number instead, and protect your real number from a spammy
+                        list.
+                      </p>
+                    </div>
+                    <div class="tabs-item__image">
+                      <picture>
+                        <source
+                          type="image/webp"
+                          sizes="(max-width: 1024px) calc(100vw - 100px), 875px"
+                          srcset="https://hushed.com/wp-content/uploads/2023/11/online-phone-number-from-Hushed-for-shopping-100x0-c-default.webp 100w, https://hushed.com/wp-content/uploads/2023/11/online-phone-number-from-Hushed-for-shopping-200x0-c-default.webp 200w, https://hushed.com/wp-content/uploads/2023/11/online-phone-number-from-Hushed-for-shopping-400x0-c-default.webp 400w, https://hushed.com/wp-content/uploads/2023/11/online-phone-number-from-Hushed-for-shopping-600x0-c-default.webp 600w, https://hushed.com/wp-content/uploads/2023/11/online-phone-number-from-Hushed-for-shopping-800x0-c-default.webp 800w, https://hushed.com/wp-content/uploads/2023/11/online-phone-number-from-Hushed-for-shopping-1000x0-c-default.webp 1000w, https://hushed.com/wp-content/uploads/2023/11/online-phone-number-from-Hushed-for-shopping-1200x0-c-default.webp 1200w, https://hushed.com/wp-content/uploads/2023/11/online-phone-number-from-Hushed-for-shopping.webp 1700w"
+                        />
+                        <source
+                          type="image/jpeg"
+                          sizes="(max-width: 1024px) calc(100vw - 100px), 875px"
+                          srcset="https://hushed.com/wp-content/uploads/2023/11/online-phone-number-from-Hushed-for-shopping-100x0-c-default.jpg 100w, https://hushed.com/wp-content/uploads/2023/11/online-phone-number-from-Hushed-for-shopping-200x0-c-default.jpg 200w, https://hushed.com/wp-content/uploads/2023/11/online-phone-number-from-Hushed-for-shopping-400x0-c-default.jpg 400w, https://hushed.com/wp-content/uploads/2023/11/online-phone-number-from-Hushed-for-shopping-600x0-c-default.jpg 600w, https://hushed.com/wp-content/uploads/2023/11/online-phone-number-from-Hushed-for-shopping-800x0-c-default.jpg 800w, https://hushed.com/wp-content/uploads/2023/11/online-phone-number-from-Hushed-for-shopping-1000x0-c-default.jpg 1000w, https://hushed.com/wp-content/uploads/2023/11/online-phone-number-from-Hushed-for-shopping-1200x0-c-default.jpg 1200w, https://hushed.com/wp-content/uploads/2023/11/online-phone-number-from-Hushed-for-shopping.jpg 1700w"
+                        />
+                        <img
+                          decoding="async"
+                          class="tab-image"
+                          width="1700"
+                          height="1133"
+                          alt="|Retail stores and loyalty programs don’t need your real cell phone number. Give them your disposable online phone number from Hushed instead."
+                          src="https://hushed.com/wp-content/uploads/2023/11/online-phone-number-from-Hushed-for-shopping.jpg"
+                          loading="eager"
+                        />
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        data-trigger-start="-30% 70%"
+        data-trigger-end="-30% 70%"
+        data-gsap-from='{"y": "20%", "duration": 0.2, "opacity": "0"}'
+        data-gsap-to='{"y": "0", "duration": 0.2, "opacity": "1"}'
+        class="features-grid-layout gutenberg-block bg-block-animation gsap-animation bg-white"
+      >
+        <div class="sk-container--md">
+          <div class="features-grid-layout-content">
+            <div class="features-grid-layout-content">
+              <h2
+                class="features-grid-layout-content__title sk-text--h3 sk-font-primary sk-text--h3"
+              >
+                A private Hushed number is flexible to your lifestyle and gives
+                you the freedom to connect how you want.
+              </h2>
+            </div>
+
+            <div class="features-grid-layout-features">
+              <div
+                class="feature-card gsap-animation"
+                data-trigger-start="-100% 80%"
+                data-trigger-end="-100% 80%"
+                data-gsap-delay="0.1"
+                data-gsap-from='{"y": "20%", "duration": 0.2, "opacity": "0"}'
+                data-gsap-to='{"y": "0", "duration": 0.2, "opacity": "1"}'
+              >
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  width="110"
+                  height="110"
+                  src="https://hushed.com/wp-content/uploads/2023/11/hushed_icons_anon_CALLING.svg"
+                  class="attachment-thumbnail size-thumbnail"
+                  alt="Icon for anonymous calling"
+                />
+                <h3 class="feature-card__title">anonymous calling</h3>
+                <p class="feature-card__text">
+                  <!-- wp:paragraph -->
+                  <p>
+                    Make and receive calls with an anonymous phone number.
+                    Nothing is connected to your regular phone number, or shows
+                    up on a phone bill.
+                  </p>
+                  <!-- /wp:paragraph -->
+                </p>
+              </div>
+              <div
+                class="feature-card gsap-animation"
+                data-trigger-start="-100% 80%"
+                data-trigger-end="-100% 80%"
+                data-gsap-delay="0.2"
+                data-gsap-from='{"y": "20%", "duration": 0.2, "opacity": "0"}'
+                data-gsap-to='{"y": "0", "duration": 0.2, "opacity": "1"}'
+              >
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  width="110"
+                  height="110"
+                  src="https://hushed.com/wp-content/uploads/2023/11/hushed_icons_SMS.svg"
+                  class="attachment-thumbnail size-thumbnail"
+                  alt=""
+                />
+                <h3 class="feature-card__title">securetexting</h3>
+                <p class="feature-card__text">
+                  <!-- wp:paragraph -->
+                  <p>
+                    Send and receive texts, GIFs, photos, videos, and audio
+                    messages on your own secure phone number. Keep every
+                    conversation private.
+                  </p>
+                  <!-- /wp:paragraph -->
+                </p>
+              </div>
+              <div
+                class="feature-card gsap-animation"
+                data-trigger-start="-100% 80%"
+                data-trigger-end="-100% 80%"
+                data-gsap-delay="0.3"
+                data-gsap-from='{"y": "20%", "duration": 0.2, "opacity": "0"}'
+                data-gsap-to='{"y": "0", "duration": 0.2, "opacity": "1"}'
+              >
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  width="110"
+                  height="110"
+                  src="https://hushed.com/wp-content/uploads/2023/11/hushed_icons_MULTIPLES.svg"
+                  class="attachment-thumbnail size-thumbnail"
+                  alt=""
+                />
+                <h3 class="feature-card__title">
+                  Manage multiple private numbers
+                </h3>
+                <p class="feature-card__text">
+                  <!-- wp:paragraph -->
+                  <p>
+                    Separate each area of your life with multiple phone numbers
+                    from Hushed. Keep each number as long as you’d like, or
+                    delete them and get new ones.
+                  </p>
+                  <!-- /wp:paragraph -->
+                </p>
+              </div>
+              <div
+                class="feature-card gsap-animation"
+                data-trigger-start="-100% 80%"
+                data-trigger-end="-100% 80%"
+                data-gsap-delay="0.1"
+                data-gsap-from='{"y": "20%", "duration": 0.2, "opacity": "0"}'
+                data-gsap-to='{"y": "0", "duration": 0.2, "opacity": "1"}'
+              >
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  width="110"
+                  height="110"
+                  src="https://hushed.com/wp-content/uploads/2023/11/hushed_icons_AUTOREPLY.svg"
+                  class="attachment-thumbnail size-thumbnail"
+                  alt=""
+                />
+                <h3 class="feature-card__title">auto-reply messages</h3>
+                <p class="feature-card__text">
+                  <!-- wp:paragraph -->
+                  <p>
+                    Automatically respond to any text message sent to your
+                    Hushed number. You can set rules and responses for every
+                    situation.
+                  </p>
+                  <!-- /wp:paragraph -->
+                </p>
+              </div>
+              <div
+                class="feature-card gsap-animation"
+                data-trigger-start="-100% 80%"
+                data-trigger-end="-100% 80%"
+                data-gsap-delay="0.2"
+                data-gsap-from='{"y": "20%", "duration": 0.2, "opacity": "0"}'
+                data-gsap-to='{"y": "0", "duration": 0.2, "opacity": "1"}'
+              >
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  width="110"
+                  height="110"
+                  src="https://hushed.com/wp-content/uploads/2023/11/hushed_icons_MULTIPLE_DEVICES-green.svg"
+                  class="attachment-thumbnail size-thumbnail"
+                  alt="multiple devices icon"
+                />
+                <h3 class="feature-card__title">multiple devices</h3>
+                <p class="feature-card__text">
+                  <!-- wp:paragraph -->
+                  <p>
+                    Log into your Hushed account on any mobile device (including
+                    tablets) to call and text. It’s a great way to turn an old
+                    phone into a working phone again!
+                  </p>
+                  <!-- /wp:paragraph -->
+                </p>
+              </div>
+              <div
+                class="feature-card gsap-animation"
+                data-trigger-start="-100% 80%"
+                data-trigger-end="-100% 80%"
+                data-gsap-delay="0.3"
+                data-gsap-from='{"y": "20%", "duration": 0.2, "opacity": "0"}'
+                data-gsap-to='{"y": "0", "duration": 0.2, "opacity": "1"}'
+              >
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  width="110"
+                  height="110"
+                  src="https://hushed.com/wp-content/uploads/2023/11/hushed_icons_contacts.svg"
+                  class="attachment-thumbnail size-thumbnail"
+                  alt="separate contacts icon"
+                />
+                <h3 class="feature-card__title">separate contacts</h3>
+                <p class="feature-card__text">
+                  <!-- wp:paragraph -->
+                  <p>
+                    Load existing contacts from your device into Hushed, or
+                    create private contacts that are only accessible within your
+                    Hushed account.
+                  </p>
+                  <!-- /wp:paragraph -->
+                </p>
+              </div>
+              <div
+                class="feature-card gsap-animation"
+                data-trigger-start="-100% 80%"
+                data-trigger-end="-100% 80%"
+                data-gsap-delay="0.1"
+                data-gsap-from='{"y": "20%", "duration": 0.2, "opacity": "0"}'
+                data-gsap-to='{"y": "0", "duration": 0.2, "opacity": "1"}'
+              >
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  width="110"
+                  height="110"
+                  src="https://hushed.com/wp-content/uploads/2023/11/hushed_icons_your_VOICEMAIL.svg"
+                  class="attachment-thumbnail size-thumbnail"
+                  alt="custom voicemail icon"
+                />
+                <h3 class="feature-card__title">Custom voicemail greetings</h3>
+                <p class="feature-card__text">
+                  <!-- wp:paragraph -->
+                  <p>
+                    Every Hushed plan includes free voicemail, so you can record
+                    custom voicemail greetings for each Hushed number.
+                  </p>
+                  <!-- /wp:paragraph -->
+                </p>
+              </div>
+              <div
+                class="feature-card gsap-animation"
+                data-trigger-start="-100% 80%"
+                data-trigger-end="-100% 80%"
+                data-gsap-delay="0.2"
+                data-gsap-from='{"y": "20%", "duration": 0.2, "opacity": "0"}'
+                data-gsap-to='{"y": "0", "duration": 0.2, "opacity": "1"}'
+              >
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  width="110"
+                  height="110"
+                  src="https://hushed.com/wp-content/uploads/2023/11/hushed_icons_FORWARDING.svg"
+                  class="attachment-thumbnail size-thumbnail"
+                  alt=""
+                />
+                <h3 class="feature-card__title">Call forwarding</h3>
+                <p class="feature-card__text">
+                  <!-- wp:paragraph -->
+                  <p>
+                    It&#8217;s easy to forward your Hushed number to another
+                    phone number, so you can answer Hushed calls without needing
+                    Wi-Fi or data.
+                  </p>
+                  <!-- /wp:paragraph -->
+                </p>
+              </div>
+              <div
+                class="feature-card gsap-animation"
+                data-trigger-start="-100% 80%"
+                data-trigger-end="-100% 80%"
+                data-gsap-delay="0.3"
+                data-gsap-from='{"y": "20%", "duration": 0.2, "opacity": "0"}'
+                data-gsap-to='{"y": "0", "duration": 0.2, "opacity": "1"}'
+              >
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  width="110"
+                  height="110"
+                  src="https://hushed.com/wp-content/uploads/2023/11/hushed_icons_CALL_RETURN.svg"
+                  class="attachment-thumbnail size-thumbnail"
+                  alt="Call routing"
+                />
+                <h3 class="feature-card__title">Call routing</h3>
+                <p class="feature-card__text">
+                  <!-- wp:paragraph -->
+                  <p>
+                    If you don&#8217;t have Wi-Fi or data, you can route
+                    outgoing Hushed calls to your regular mobile number while
+                    keeping your number concealed.
+                  </p>
+                  <!-- /wp:paragraph -->
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        data-trigger-start="-30% 85%"
+        data-trigger-end="-30% 85%"
+        data-gsap-from='{"y": "20%", "duration": 0.2, "opacity": "0"}'
+        data-gsap-to='{"y": "0", "duration": 0.2, "opacity": "1"}'
+        class="search-code-form gutenberg-block bg-block-animation gsap-animation bg-second-extra-light"
+      >
+        <div class="search-code-form__container">
+          <div class="search-code-form__wrapper">
+            <div class="wrap-content">
+              <h4 class="search-code-form__title sk-font-primary sk-text--h3">
+                Explore your area of anonymity.
+              </h4>
+
+              <form class="search-code-form__form">
+                <div class="search-code-form__text">
+                  <p>
+                    Get a Hushed phone number in your own area code, or choose
+                    from 300+ other area codes.
+                  </p>
+                </div>
+                <div class="search-code-form__input-wrapper">
+                  <button
+                    aria-label="Search area code"
+                    class="btn-search"
+                    type="submit"
+                  >
+                    <svg
+                      width="32"
+                      height="32"
+                      viewBox="0 0 32 32"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle
+                        opacity="0.5"
+                        cx="16"
+                        cy="16"
+                        r="16"
+                        fill="#A6CDCD"></circle>
+                      <circle
+                        cx="17.9322"
+                        cy="14.069"
+                        r="6.06897"
+                        fill="white"
+                        stroke="#154042"></circle>
+                      <path
+                        d="M13.5172 18.4824L8 23.9997"
+                        stroke="#154042"
+                        stroke-linecap="round"></path>
+                    </svg>
+                  </button>
+                  <input
+                    type="text"
+                    name="search-area-code"
+                    data-page-search="https://hushed.com/area-codes/"
+                    id="search-area-code"
+                    placeholder="Search by area code"
+                    required
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        data-trigger-start="-30% 70%"
+        data-trigger-end="-30% 70%"
+        data-gsap-from='{"y": "20%", "duration": 0.2, "opacity": "0"}'
+        data-gsap-to='{"y": "0", "duration": 0.2, "opacity": "1"}'
+        class="testimonials-slider bg-block-animation gsap-animation gutenberg-block bg-primary-medium"
+      >
+        <div class="sk-container sk-container--md testimonials-slider__wrapper">
+          <div class="testimonials-slider__content">
+            <h2 class="testimonials-slider__title sk-font-primary sk-text--h3">
+              You’ve got a lot to say.
+            </h2>
+
+            <p class="testimonials-slider__text">
+              We want to relay the message.
+            </p>
+          </div>
+
+          <div class="testimonials-slider__slider-wrapper">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="testimonial testimonial--text bg-third-medium">
+                    <p class="testimonial__content">
+                      “If you’re worried about the minutes left on your actual
+                      mobile phone contract, Hushed goes for VoIP, meaning it
+                      will default to making calls over wi-fi rather than the
+                      data network.”
+                    </p>
+
+                    <p class="testimonial__name">
+                      <span>&#8211; </span>Eric Griffith, PC Mag
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div
+                    class="testimonial testimonial--text bg-primary-extra-light"
+                  >
+                    <p class="testimonial__content">
+                      &#8220;Great communication tool. It works well, and the
+                      customer support is excellent.&#8221;
+                    </p>
+
+                    <p class="testimonial__name">
+                      <span>&#8211; </span>App Store review
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonial testimonial--text bg-white">
+                    <p class="testimonial__content">
+                      &#8220;I can give someone my phone number and it&#8217;s
+                      not my &#8216;real&#8217; number. Having a secondary phone
+                      number makes it easier to screen calls. LOVE IT!&#8221;
+                    </p>
+
+                    <p class="testimonial__name">
+                      <span>&#8211; </span>Google Play review
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonial testimonial--text bg-third-light">
+                    <p class="testimonial__content">
+                      &#8220;Ideal for communicating with anyone you don&#8217;t
+                      necessarily want to have your number, like the person on
+                      Craigslist or a blind date you&#8217;re meeting for the
+                      first time.&#8221;
+                    </p>
+
+                    <p class="testimonial__name">
+                      <span>&#8211; </span>ALLEN HENRY, LIFEHACKER
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div
+                    class="testimonial testimonial--text bg-second-extra-light"
+                  >
+                    <p class="testimonial__content">
+                      &#8220;A Hushed private phone line is an easy way to
+                      protect your privacy. Choose from hundreds of U.S. and
+                      Canada area codes, customize your voicemail, and set up
+                      call forwarding without any added fees.&#8221;
+                    </p>
+
+                    <p class="testimonial__name">
+                      <span>&#8211; </span>NEW YORK POST
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonial testimonial--text bg-second">
+                    <p class="testimonial__content">
+                      &#8220;[Hushed is] a viable, more lightweight alternative
+                      to something like Google Voice.&#8221;
+                    </p>
+
+                    <p class="testimonial__name">
+                      <span>&#8211; </span>SARAH PEREZ, TECHCRUNCH
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <Footer />
+
+    <!-- SVG Definitions -->
+    <div
+      class="svg-defs"
+      style="position:fixed; opacity: 0; pointer-events: none; left: -200vw; font-size: 0"
+    >
+      <svg>
+        <defs>
+          <symbol id="icon-logo" viewBox="0 0 140 30" fill="none">
+            <!-- Logo path data -->
+          </symbol>
+          <symbol
+            id="stars"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M19 1L17.74 3.75L15 5L17.74 6.26L19 9L20.25 6.26L23 5L20.25 3.75M9 4L6.5 9.5L1 12L6.5 14.5L9 20L11.5 14.5L17 12L11.5 9.5M19 15L17.74 17.74L15 19L17.74 20.25L19 23L20.25 20.25L23 19L20.25 17.74"
+              fill="currentColor"></path>
+          </symbol>
+          <symbol
+            id="arrow"
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M3.75021 9.16661L13.4052 9.16661L9.65522 5.41661L10.8335 4.23828L16.5952 9.99995L10.8335 15.7616L9.65521 14.5833L13.4052 10.8333L3.75021 10.8333L3.75021 9.16661Z"
+              fill="currentColor"></path>
+          </symbol>
+        </defs>
+      </svg>
+
+      <!-- Gooey effect filter -->
+      <svg
+        style="visibility: hidden; position: absolute;"
+        width="0"
+        height="0"
+        xmlns="http://www.w3.org/2000/svg"
+        version="1.1"
+      >
+        <defs>
+          <filter id="goo">
+            <fegaussianblur in="SourceGraphic" stddeviation="10" result="blur"
+            ></fegaussianblur>
+            <fecolormatrix
+              in="blur"
+              values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+              result="goo"></fecolormatrix>
+            <fecomposite in="SourceGraphic" in2="goo" operator="atop"
+            ></fecomposite>
+          </filter>
+        </defs>
+      </svg>
+    </div>
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="/js/manifest.js" id="manifest-js" defer
+    ></script>
+    <script type="text/javascript" src="/js/app.js" id="app-js" defer></script>
+    <script
+      type="text/javascript"
+      src="/js/templates/index.js"
+      id="template-index-js"
+      defer></script>
+    <script
+      type="text/javascript"
+      src="/js/blocks/tabs-info.js"
+      id="block-tabs-info-js"
+      data-rocket-defer
+      defer></script>
+    <script
+      type="text/javascript"
+      src="/js/blocks/search-area-code.js"
+      id="block-search-area-code-js"
+      data-rocket-defer
+      defer></script>
+    <script
+      type="text/javascript"
+      src="/js/blocks/testimonials-slider.js"
+      id="block-testimonials-slider-js"
+      data-rocket-defer
+      defer></script>
+  </body>
+</BaseLayout>

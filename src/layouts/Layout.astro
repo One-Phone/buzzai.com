@@ -1,0 +1,736 @@
+---
+interface Props {
+  title?: string;
+  description?: string;
+  og_locale?: string;
+  og_type?: string;
+  og_title?: string;
+  og_description?: string;
+  og_url?: string;
+  og_site_name?: string;
+  og_image?: string;
+  og_image_width?: string;
+  og_image_height?: string;
+  og_image_type?: string;
+}
+
+const {
+  title = "Hushed",
+  description = "Default description",
+  og_locale = "en_US",
+  og_type = "article",
+  og_title = "Blog - Hushed | Secure second and temporary phone number app",
+  og_description = "Welcome to the Hushed blog! Here we explore topics related to private numbers and their uses, from small business to dating. We cover it all!",
+  og_url = "https://hushed.com/blog/",
+  og_site_name = "Hushed | Secure second and temporary phone number app",
+  og_image = "https://hushed.com/wp-content/uploads/2024/02/Hushed-app-features.png",
+  og_image_width = "1099",
+  og_image_height = "535",
+  og_image_type = "image/png",
+} = Astro.props;
+---
+
+<!doctype html>
+<!--[if lt IE 9]><html class="no-js no-svg ie lt-ie9 lt-ie8 lt-ie7" lang="en-US"> <![endif]--><!--[if IE 9]><html class="no-js no-svg ie ie9 lt-ie9 lt-ie8" lang="en-US"> <![endif]--><!--[if gt IE 9]><!-->
+<html class="no-js no-svg" lang="en-US">
+  <!--<![endif]-->
+  <head>
+    <meta charset="UTF-8" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
+    <meta property="og:locale" content={og_locale} />
+    <meta property="og:type" content={og_type} />
+    <meta property="og:title" content={og_title} />
+    <meta property="og:description" content={og_description} />
+    <meta property="og:url" content={og_url} />
+    <meta property="og:site_name" content={og_site_name} />
+    <meta property="og:image" content={og_image} />
+    <meta property="og:image:width" content={og_image_width} />
+    <meta property="og:image:height" content={og_image_height} />
+    <meta property="og:image:type" content={og_image_type} />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="dns-prefetch" href="//a.omappapi.com" />
+    <link rel="dns-prefetch" href="//www.googletagmanager.com" />
+
+    <link
+      rel="stylesheet"
+      id="block-testimonials-slider-css"
+      href="/css/blocks/testimonials-slider.css"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      href="/css/style.css"
+      type="text/css"
+      media="screen"
+    />
+    <link
+    rel="stylesheet"
+    href="/css/app.css"
+    type="text/css"
+    media="screen"
+  />
+    <link
+      rel="stylesheet"
+      id="wp-block-library-css"
+      href="/css/dist/block-library/style.min.css"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="block-banner-cta-css"
+      href="/css/blocks/banner-cta.css"
+      type="text/css"
+      media="all"
+    />
+
+    <script
+      type="text/javascript"
+      src="/js/vendor/jquery.min.js"
+      id="jquery-core-js"
+      data-rocket-defer
+      defer></script>
+    <script
+      type="text/javascript"
+      src="/js/vendor/jquery-migrate.min.js"
+      id="jquery-migrate-js"
+      data-rocket-defer
+      defer></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Common Styles -->
+    <style is:global>
+      :root {
+        --breakpoint-xxl: 1920px;
+        --breakpoint-xl: 1440px;
+        --breakpoint-lg: 1280px;
+        --breakpoint-md: 1024px;
+        --breakpoint-md-s: 992px;
+        --breakpoint-sm: 768px;
+        --breakpoint-xs: 512px;
+        --breakpoint-xxs: 390px;
+      }
+
+      .loading-fonts h1,
+      .loading-fonts h2,
+      .loading-fonts h3,
+      .loading-fonts h4,
+      .loading-fonts h5,
+      .loading-fonts h6,
+      .loading-fonts label,
+      .loading-fonts input,
+      .loading-fonts p,
+      .loading-fonts span,
+      .loading-fonts a,
+      .loading-fonts q,
+      .loading-fonts li,
+      .loading-fonts svg,
+      .loading-fonts button {
+        opacity: 0;
+      }
+    </style>
+
+    <style id="heateor_sss_frontend_css-inline-css" type="text/css">
+      .heateor_sss_button_instagram span.heateor_sss_svg,
+      a.heateor_sss_instagram span.heateor_sss_svg {
+        background: radial-gradient(
+          circle at 30% 107%,
+          #fdf497 0,
+          #fdf497 5%,
+          #fd5949 45%,
+          #d6249f 60%,
+          #285aeb 90%
+        );
+      }
+      .heateor_sss_horizontal_sharing .heateor_sss_svg,
+      .heateor_sss_standard_follow_icons_container .heateor_sss_svg {
+        color: #fff;
+        border-width: 0px;
+        border-style: solid;
+        border-color: transparent;
+      }
+      .heateor_sss_horizontal_sharing .heateorSssTCBackground {
+        color: #666;
+      }
+      .heateor_sss_horizontal_sharing span.heateor_sss_svg:hover,
+      .heateor_sss_standard_follow_icons_container span.heateor_sss_svg:hover {
+        border-color: transparent;
+      }
+      .heateor_sss_vertical_sharing span.heateor_sss_svg,
+      .heateor_sss_floating_follow_icons_container span.heateor_sss_svg {
+        color: #fff;
+        border-width: 0px;
+        border-style: solid;
+        border-color: transparent;
+      }
+      .heateor_sss_vertical_sharing .heateorSssTCBackground {
+        color: #666;
+      }
+      .heateor_sss_vertical_sharing span.heateor_sss_svg:hover,
+      .heateor_sss_floating_follow_icons_container span.heateor_sss_svg:hover {
+        border-color: transparent;
+      }
+      div.heateor_sss_sharing_title {
+        text-align: center;
+      }
+      div.heateor_sss_sharing_ul {
+        width: 100%;
+        text-align: center;
+      }
+      div.heateor_sss_horizontal_sharing div.heateor_sss_sharing_ul a {
+        float: none !important;
+        display: inline-block;
+      }
+    </style>
+    <style id="rocket-lazyload-inline-css" type="text/css">
+      .rll-youtube-player {
+        position: relative;
+        padding-bottom: 56.23%;
+        height: 0;
+        overflow: hidden;
+        max-width: 100%;
+      }
+      .rll-youtube-player:focus-within {
+        outline: 2px solid currentColor;
+        outline-offset: 5px;
+      }
+      .rll-youtube-player iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 100;
+        background: 0 0;
+      }
+      .rll-youtube-player img {
+        bottom: 0;
+        display: block;
+        left: 0;
+        margin: auto;
+        max-width: 100%;
+        width: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        border: none;
+        height: auto;
+        -webkit-transition: 0.4s all;
+        -moz-transition: 0.4s all;
+        transition: 0.4s all;
+      }
+      .rll-youtube-player img:hover {
+        -webkit-filter: brightness(75%);
+      }
+      .rll-youtube-player .play {
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        position: absolute;
+        background: var(--wpr-bg-85ff397c-ec1d-4d4d-af03-39994cc78c31) no-repeat
+          center;
+        background-color: transparent !important;
+        cursor: pointer;
+        border: none;
+      }
+    </style>
+    <style type="text/css" id="wp-custom-css">
+      a#CybotCookiebotDialogBodyButtonDecline {
+        background-color: #333333 !important;
+        border: 1px solid #333333 !important;
+        border-radius: 10px !important;
+        padding: 15px 20px !important;
+      }
+    </style>
+
+    <noscript
+      ><style id="rocket-lazyload-nojs-css">
+        .rll-youtube-player,
+        [data-lazy-src] {
+          display: none !important;
+        }
+      </style></noscript
+    >
+
+    <style id="wpr-lazyload-bg-container"></style><style
+      id="wpr-lazyload-bg-exclusion"
+    ></style>
+
+    <style id="wpr-lazyload-bg-nostyle">
+      blockquote.sk-blockquote:before {
+        --wpr-bg-e6b26481-edbb-483e-8005-ce24bb840e6b: url("https://hushed.com/wp-content/themes/hushed-rebuild/public/img/blockquote-start.svg");
+      }
+      blockquote.sk-blockquote:after {
+        --wpr-bg-8bebfd0b-099a-46fc-99f2-e1d864c7ab4c: url("https://hushed.com/wp-content/themes/hushed-rebuild/public/img/blockquote-end.svg");
+      }
+      #heateor_sss_mastodon_popup_bg,
+      #heateor_sss_popup_bg {
+        --wpr-bg-62d40906-5bc1-4772-9783-82dc846f5296: url("https://hushed.com/wp-content/plugins/sassy-social-share/images/transparent_bg.png");
+      }
+      .rll-youtube-player .play {
+        --wpr-bg-85ff397c-ec1d-4d4d-af03-39994cc78c31: url("https://hushed.com/wp-content/plugins/wp-rocket/assets/img/youtube.png");
+      }
+    </style>
+
+    <style id="global-styles-inline-css" type="text/css">
+      :root {
+        --wp--preset--aspect-ratio--square: 1;
+        --wp--preset--aspect-ratio--4-3: 4/3;
+        --wp--preset--aspect-ratio--3-4: 3/4;
+        --wp--preset--aspect-ratio--3-2: 3/2;
+        --wp--preset--aspect-ratio--2-3: 2/3;
+        --wp--preset--aspect-ratio--16-9: 16/9;
+        --wp--preset--aspect-ratio--9-16: 9/16;
+        --wp--preset--color--black: #000000;
+        --wp--preset--color--cyan-bluish-gray: #abb8c3;
+        --wp--preset--color--white: #ffffff;
+        --wp--preset--color--pale-pink: #f78da7;
+        --wp--preset--color--vivid-red: #cf2e2e;
+        --wp--preset--color--luminous-vivid-orange: #ff6900;
+        --wp--preset--color--luminous-vivid-amber: #fcb900;
+        --wp--preset--color--light-green-cyan: #7bdcb5;
+        --wp--preset--color--vivid-green-cyan: #00d084;
+        --wp--preset--color--pale-cyan-blue: #8ed1fc;
+        --wp--preset--color--vivid-cyan-blue: #0693e3;
+        --wp--preset--color--vivid-purple: #9b51e0;
+        --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(
+          135deg,
+          rgba(6, 147, 227, 1) 0%,
+          rgb(155, 81, 224) 100%
+        );
+        --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(
+          135deg,
+          rgb(122, 220, 180) 0%,
+          rgb(0, 208, 130) 100%
+        );
+        --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(
+          135deg,
+          rgba(252, 185, 0, 1) 0%,
+          rgba(255, 105, 0, 1) 100%
+        );
+        --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(
+          135deg,
+          rgba(255, 105, 0, 1) 0%,
+          rgb(207, 46, 46) 100%
+        );
+        --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(
+          135deg,
+          rgb(238, 238, 238) 0%,
+          rgb(169, 184, 195) 100%
+        );
+        --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(
+          135deg,
+          rgb(74, 234, 220) 0%,
+          rgb(151, 120, 209) 20%,
+          rgb(207, 42, 186) 40%,
+          rgb(238, 44, 130) 60%,
+          rgb(251, 105, 98) 80%,
+          rgb(254, 248, 76) 100%
+        );
+        --wp--preset--gradient--blush-light-purple: linear-gradient(
+          135deg,
+          rgb(255, 206, 236) 0%,
+          rgb(152, 150, 240) 100%
+        );
+        --wp--preset--gradient--blush-bordeaux: linear-gradient(
+          135deg,
+          rgb(254, 205, 165) 0%,
+          rgb(254, 45, 45) 50%,
+          rgb(107, 0, 62) 100%
+        );
+        --wp--preset--gradient--luminous-dusk: linear-gradient(
+          135deg,
+          rgb(255, 203, 112) 0%,
+          rgb(199, 81, 192) 50%,
+          rgb(65, 88, 208) 100%
+        );
+        --wp--preset--gradient--pale-ocean: linear-gradient(
+          135deg,
+          rgb(255, 245, 203) 0%,
+          rgb(182, 227, 212) 50%,
+          rgb(51, 167, 181) 100%
+        );
+        --wp--preset--gradient--electric-grass: linear-gradient(
+          135deg,
+          rgb(202, 248, 128) 0%,
+          rgb(113, 206, 126) 100%
+        );
+        --wp--preset--gradient--midnight: linear-gradient(
+          135deg,
+          rgb(2, 3, 129) 0%,
+          rgb(40, 116, 252) 100%
+        );
+        --wp--preset--font-size--small: 13px;
+        --wp--preset--font-size--medium: 20px;
+        --wp--preset--font-size--large: 36px;
+        --wp--preset--font-size--x-large: 42px;
+        --wp--preset--spacing--20: 0.44rem;
+        --wp--preset--spacing--30: 0.67rem;
+        --wp--preset--spacing--40: 1rem;
+        --wp--preset--spacing--50: 1.5rem;
+        --wp--preset--spacing--60: 2.25rem;
+        --wp--preset--spacing--70: 3.38rem;
+        --wp--preset--spacing--80: 5.06rem;
+        --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+        --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+        --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
+        --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1),
+          6px 6px rgba(0, 0, 0, 1);
+        --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
+      }
+      :where(.is-layout-flex) {
+        gap: 0.5em;
+      }
+      :where(.is-layout-grid) {
+        gap: 0.5em;
+      }
+      body .is-layout-flex {
+        display: flex;
+      }
+      .is-layout-flex {
+        flex-wrap: wrap;
+        align-items: center;
+      }
+      .is-layout-flex > :is(*, div) {
+        margin: 0;
+      }
+      body .is-layout-grid {
+        display: grid;
+      }
+      .is-layout-grid > :is(*, div) {
+        margin: 0;
+      }
+      :where(.wp-block-columns.is-layout-flex) {
+        gap: 2em;
+      }
+      :where(.wp-block-columns.is-layout-grid) {
+        gap: 2em;
+      }
+      :where(.wp-block-post-template.is-layout-flex) {
+        gap: 1.25em;
+      }
+      :where(.wp-block-post-template.is-layout-grid) {
+        gap: 1.25em;
+      }
+      .has-black-color {
+        color: var(--wp--preset--color--black) !important;
+      }
+      .has-cyan-bluish-gray-color {
+        color: var(--wp--preset--color--cyan-bluish-gray) !important;
+      }
+      .has-white-color {
+        color: var(--wp--preset--color--white) !important;
+      }
+      .has-pale-pink-color {
+        color: var(--wp--preset--color--pale-pink) !important;
+      }
+      .has-vivid-red-color {
+        color: var(--wp--preset--color--vivid-red) !important;
+      }
+      .has-luminous-vivid-orange-color {
+        color: var(--wp--preset--color--luminous-vivid-orange) !important;
+      }
+      .has-luminous-vivid-amber-color {
+        color: var(--wp--preset--color--luminous-vivid-amber) !important;
+      }
+      .has-light-green-cyan-color {
+        color: var(--wp--preset--color--light-green-cyan) !important;
+      }
+      .has-vivid-green-cyan-color {
+        color: var(--wp--preset--color--vivid-green-cyan) !important;
+      }
+      .has-pale-cyan-blue-color {
+        color: var(--wp--preset--color--pale-cyan-blue) !important;
+      }
+      .has-vivid-cyan-blue-color {
+        color: var(--wp--preset--color--vivid-cyan-blue) !important;
+      }
+      .has-vivid-purple-color {
+        color: var(--wp--preset--color--vivid-purple) !important;
+      }
+      .has-black-background-color {
+        background-color: var(--wp--preset--color--black) !important;
+      }
+      .has-cyan-bluish-gray-background-color {
+        background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+      }
+      .has-white-background-color {
+        background-color: var(--wp--preset--color--white) !important;
+      }
+      .has-pale-pink-background-color {
+        background-color: var(--wp--preset--color--pale-pink) !important;
+      }
+      .has-vivid-red-background-color {
+        background-color: var(--wp--preset--color--vivid-red) !important;
+      }
+      .has-luminous-vivid-orange-background-color {
+        background-color: var(
+          --wp--preset--color--luminous-vivid-orange
+        ) !important;
+      }
+      .has-luminous-vivid-amber-background-color {
+        background-color: var(
+          --wp--preset--color--luminous-vivid-amber
+        ) !important;
+      }
+      .has-light-green-cyan-background-color {
+        background-color: var(--wp--preset--color--light-green-cyan) !important;
+      }
+      .has-vivid-green-cyan-background-color {
+        background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+      }
+      .has-pale-cyan-blue-background-color {
+        background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+      }
+      .has-vivid-cyan-blue-background-color {
+        background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+      }
+      .has-vivid-purple-background-color {
+        background-color: var(--wp--preset--color--vivid-purple) !important;
+      }
+      .has-black-border-color {
+        border-color: var(--wp--preset--color--black) !important;
+      }
+      .has-cyan-bluish-gray-border-color {
+        border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+      }
+      .has-white-border-color {
+        border-color: var(--wp--preset--color--white) !important;
+      }
+      .has-pale-pink-border-color {
+        border-color: var(--wp--preset--color--pale-pink) !important;
+      }
+      .has-vivid-red-border-color {
+        border-color: var(--wp--preset--color--vivid-red) !important;
+      }
+      .has-luminous-vivid-orange-border-color {
+        border-color: var(
+          --wp--preset--color--luminous-vivid-orange
+        ) !important;
+      }
+      .has-luminous-vivid-amber-border-color {
+        border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+      }
+      .has-light-green-cyan-border-color {
+        border-color: var(--wp--preset--color--light-green-cyan) !important;
+      }
+      .has-vivid-green-cyan-border-color {
+        border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+      }
+      .has-pale-cyan-blue-border-color {
+        border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+      }
+      .has-vivid-cyan-blue-border-color {
+        border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+      }
+      .has-vivid-purple-border-color {
+        border-color: var(--wp--preset--color--vivid-purple) !important;
+      }
+      .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+        background: var(
+          --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple
+        ) !important;
+      }
+      .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+        background: var(
+          --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan
+        ) !important;
+      }
+      .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+        background: var(
+          --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange
+        ) !important;
+      }
+      .has-luminous-vivid-orange-to-vivid-red-gradient-background {
+        background: var(
+          --wp--preset--gradient--luminous-vivid-orange-to-vivid-red
+        ) !important;
+      }
+      .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+        background: var(
+          --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray
+        ) !important;
+      }
+      .has-cool-to-warm-spectrum-gradient-background {
+        background: var(
+          --wp--preset--gradient--cool-to-warm-spectrum
+        ) !important;
+      }
+      .has-blush-light-purple-gradient-background {
+        background: var(--wp--preset--gradient--blush-light-purple) !important;
+      }
+      .has-blush-bordeaux-gradient-background {
+        background: var(--wp--preset--gradient--blush-bordeaux) !important;
+      }
+      .has-luminous-dusk-gradient-background {
+        background: var(--wp--preset--gradient--luminous-dusk) !important;
+      }
+      .has-pale-ocean-gradient-background {
+        background: var(--wp--preset--gradient--pale-ocean) !important;
+      }
+      .has-electric-grass-gradient-background {
+        background: var(--wp--preset--gradient--electric-grass) !important;
+      }
+      .has-midnight-gradient-background {
+        background: var(--wp--preset--gradient--midnight) !important;
+      }
+      .has-small-font-size {
+        font-size: var(--wp--preset--font-size--small) !important;
+      }
+      .has-medium-font-size {
+        font-size: var(--wp--preset--font-size--medium) !important;
+      }
+      .has-large-font-size {
+        font-size: var(--wp--preset--font-size--large) !important;
+      }
+      .has-x-large-font-size {
+        font-size: var(--wp--preset--font-size--x-large) !important;
+      }
+      :where(.wp-block-post-template.is-layout-flex) {
+        gap: 1.25em;
+      }
+      :where(.wp-block-post-template.is-layout-grid) {
+        gap: 1.25em;
+      }
+      :where(.wp-block-columns.is-layout-flex) {
+        gap: 2em;
+      }
+      :where(.wp-block-columns.is-layout-grid) {
+        gap: 2em;
+      }
+      :root :where(.wp-block-pullquote) {
+        font-size: 1.5em;
+        line-height: 1.6;
+      }
+    </style>
+    <style id="classic-theme-styles-inline-css" type="text/css">
+      /*! This file is auto-generated */
+      .wp-block-button__link {
+        color: #fff;
+        background-color: #32373c;
+        border-radius: 9999px;
+        box-shadow: none;
+        text-decoration: none;
+        padding: calc(0.667em + 2px) calc(1.333em + 2px);
+        font-size: 1.125em;
+      }
+      .wp-block-file__button {
+        background: #32373c;
+        color: #fff;
+        text-decoration: none;
+      }
+    </style>
+    <style id="safe-svg-svg-icon-style-inline-css" type="text/css">
+      .safe-svg-cover {
+        text-align: center;
+      }
+      .safe-svg-cover .safe-svg-inside {
+        display: inline-block;
+        max-width: 100%;
+      }
+      .safe-svg-cover svg {
+        height: 100%;
+        max-height: 100%;
+        max-width: 100%;
+        width: 100%;
+      }
+    </style>
+    <style id="wp-emoji-styles-inline-css" type="text/css">
+      img.wp-smiley,
+      img.emoji {
+        display: inline !important;
+        border: none !important;
+        box-shadow: none !important;
+        height: 1em !important;
+        width: 1em !important;
+        margin: 0 0.07em !important;
+        vertical-align: -0.1em !important;
+        background: none !important;
+        padding: 0 !important;
+      }
+    </style>
+    <!-- Common Scripts -->
+    <script>
+      (function (c, s, q, u, a, r, e) {
+        c.hj =
+          c.hj ||
+          function () {
+            (c.hj.q = c.hj.q || []).push(arguments);
+          };
+        c._hjSettings = { hjid: a };
+        r = s.getElementsByTagName("head")[0];
+        e = s.createElement("script");
+        e.async = true;
+        e.src = q + c._hjSettings.hjid + u;
+        r.appendChild(e);
+      })(
+        window,
+        document,
+        "https://static.hj.contentsquare.net/c/csq-",
+        ".js",
+        5220589
+      );
+    </script>
+    <link
+      rel="icon"
+      href="/images/cropped-android-chrome-512x512-1-32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      href="/images/cropped-android-chrome-512x512-1-192x192.png"
+      sizes="192x192"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="/images/cropped-android-chrome-512x512-1-180x180.png"
+    />
+    <meta
+      name="msapplication-TileImage"
+      content="/images/cropped-android-chrome-512x512-1-270x270.png"
+    />
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
+
+    <link rel="stylesheet" id="app-css" href="/css/app.css" type="text/css" media="all"/>
+    <link rel="stylesheet" id="template-index-css" href="/css/templates/index.css" type="text/css" media="all"/>
+
+
+    <slot name="head" />
+  </head>
+  <body>
+    <slot />
+
+    <!-- Common Footer Scripts -->
+    <script
+      type="text/javascript"
+      src="/js/manifest.js"
+      id="manifest-js"
+      data-rocket-defer
+      defer></script>
+    <script
+      type="text/javascript"
+      src="/js/app.js"
+      id="app-js"
+      data-rocket-defer
+      defer></script>
+    <script
+      type="text/javascript"
+      src="/js/templates/index.js"
+      id="template-index-js"
+      data-rocket-defer
+      defer></script>
+    <slot name="footer-scripts" />
+  </body>
+</html>

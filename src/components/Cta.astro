@@ -1,0 +1,63 @@
+---
+import { config } from '../config';
+---
+
+<section
+data-trigger-start="-30% 70%"
+data-trigger-end="-30% 70%"
+data-gsap-from='{"y": "20%", "duration": 0.2, "opacity": "0"}'
+data-gsap-to='{"y": "0", "duration": 0.2, "opacity": "1"}'
+class="banner-cta bg-block-animation gsap-animation gutenberg-block bg-second-light"
+>
+<div
+  data-gsap-from='{"y": "20%", "duration": 0.5, "opacity": "0"}'
+  data-gsap-to='{"y": "0", "duration": 0.5, "opacity": "1"}'
+  class="sk-container gsap-animation-item-timeline sk-container--fl bg-third-light"
+>
+  <div class="banner-cta-content">
+    <h2 class="banner-cta-content__title sk-font-primary sk-text--h3">
+      Cancel out the noise with Hushed
+    </h2>
+
+    <p class="banner-cta-content__text">
+      Talk and text on anonymous phone numbers
+    </p>
+
+    <a
+      href={config.urls.app + '/signup'}
+      class="sk-btn banner-cta-content__button banner-cta-desktop"
+      target="_self">LET&#8217;S GO</a
+    >
+  </div>
+  <div
+    data-gsap-from='{"y": "20%", "duration": 0.5, "delay" : 0.4, "opacity": "0"}'
+    data-gsap-to='{"y": "0", "duration": 0.5, "delay" : 0.4, "opacity": "1"}'
+    class="banner-cta-picture gsap-animation-item-timeline"
+  >
+    <picture>
+      <source
+        type="image/webp"
+        sizes="(max-width: 767px) 200px, (max-width: 991px) 400px, 600px"
+        srcset="/images/hushed-phone-list-large-100x0-c-default.webp 100w, /images/hushed-phone-list-large-200x0-c-default.webp 200w, /images/hushed-phone-list-large-400x0-c-default.webp 400w, /images/hushed-phone-list-large-600x0-c-default.webp 600w, /images/hushed-phone-list-large.webp 632w"
+      />
+      <source
+        type="image/jpeg"
+        sizes="(max-width: 767px) 200px, (max-width: 991px) 400px, 600px"
+        srcset="/images/hushed-phone-list-large-100x0-c-default.jpg 100w, /images/hushed-phone-list-large-200x0-c-default.jpg 200w, /images/hushed-phone-list-large-400x0-c-default.jpg 400w, /images/hushed-phone-list-large-600x0-c-default.jpg 600w, /images/hushed-phone-list-large.jpg 632w"
+      />
+      <img
+        decoding="async"
+        class="banner-image"
+        width="632"
+        height="695"
+        alt="hushed-phone-list-large"
+        src="/images/hushed-phone-list-large.png"
+        loading="eager"
+      />
+    </picture>
+  </div>
+</div>
+</section>
+
+
+

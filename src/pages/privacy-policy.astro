@@ -1,0 +1,126 @@
+---
+import BaseLayout from "../layouts/Layout.astro";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+import "../styles/common.css";
+import { config } from '../config';
+---
+
+<BaseLayout
+  title="Privacy Policy - Hushed | Secure second and temporary phone number app"
+  description="Hushed is founded on the principle of helping people keep their private communications private without compromise — as they should be."
+  og_title="Privacy Policy - Hushed | Secure second and temporary phone number app"
+  og_description="Hushed is founded on the principle of helping people keep their private communications private without compromise — as they should be."
+  og_url={config.urls.origin + '/privacy-policy/'}
+  og_site_name="Hushed | Secure second and temporary phone number app"
+  og_image={config.urls.origin + '/images/Hushed-app-features.png'}
+  og_image_width="1099"
+  og_image_height="535"
+  og_image_type="image/png"
+>
+  <slot name="head">
+    <link rel="stylesheet" id="app-css" href={config.urls.origin + '/css/app.css'} type="text/css" media="all"/>
+    <link rel="stylesheet" id="template-index-css" href={config.urls.origin + '/css/templates/index.css'} type="text/css" media="all"/>
+    <link rel="stylesheet" href={config.urls.origin + '/css/blocks/banner-video.css'} type="text/css" media="screen"/>
+
+    
+    </slot>
+
+  <body class="privacy-policy loading-fonts" data-template="base.twig" data-bg-color="bg-primary">
+    <Header />
+    <div class="overlay-mob-menu load bg-primary"></div>
+    
+    <main role="main" class="content-wrapper">
+      <section class="banner-video">
+        <div class="banner-video__wrapper">
+          <div class="banner-video__content">
+            <h1 class="banner-video__title">Privacy Policy</h1>
+            <div class="banner-video__text">
+              <p>Hushed is founded on the principle of helping people keep their private communications private without compromise — as they should be.</p>
+            </div>
+          </div>
+          <div class="banner-video__media">
+            <div class="banner-video__media-mask">
+              <div class="iframe-container">
+                <img src={config.urls.origin + '/images/privacy-policy-banner.jpg'} alt="Privacy Policy Banner" />
+              </div>
+            </div>
+          </div>
+          <div class="banner-video__media--mobile">
+            <div class="banner-video__media-mask">
+              <div class="iframe-container">
+                <img src={config.urls.origin + '/images/privacy-policy-banner-mobile.jpg'} alt="Privacy Policy Banner Mobile" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="text-with-image">
+        <div class="text-with-image__wrapper">
+          <div class="text-with-image__content">
+            <h2 class="text-with-image__title">Our Commitment to Privacy</h2>
+            <div class="text-with-image__text">
+              <p>Your privacy is critically important to us. At Hushed, we have a few fundamental principles:</p>
+              <ul>
+                <li>We don't ask you for personal information unless we truly need it.</li>
+                <li>We don't share your personal information with anyone except to comply with the law, develop our products, or protect our rights.</li>
+                <li>We don't store personal information on our servers unless required for the on-going operation of our services.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="text-with-image__media">
+            <img src={config.urls.origin + '/images/privacy-commitment.jpg'} alt="Privacy Commitment" />
+          </div>
+        </div>
+      </section>
+
+      <section class="shuffled-text-and-image">
+        <div class="shuffled-text-and-image__title">
+          <div class="shuffled-text-and-image__title-row">
+            <h2>How We Protect Your Data</h2>
+            <div class="shuffled-text-and-image__img shuffled-text-and-image__img--1">
+              <img src={config.urls.origin + '/images/data-protection-1.jpg'} alt="Data Protection 1" />
+            </div>
+          </div>
+          <div class="shuffled-text-and-image__title-row">
+            <div class="shuffled-text-and-image__img shuffled-text-and-image__img--2">
+              <img src={config.urls.origin + '/images/data-protection-2.jpg'} alt="Data Protection 2" />
+            </div>
+            <div class="shuffled-text-and-image__img shuffled-text-and-image__img--3">
+              <img src={config.urls.origin + '/images/data-protection-3.jpg'} alt="Data Protection 3" />
+            </div>
+          </div>
+        </div>
+        <div class="shuffled-text-and-image__text">
+          <p>We use industry-standard encryption and security measures to protect your data. Our servers are regularly monitored and updated to ensure the highest level of security.</p>
+        </div>
+      </section>
+
+      <!-- Add more sections as needed for your privacy policy content -->
+    </main>
+
+    <Footer />
+
+    <!-- Scripts -->
+    <script>
+      (function(c,s,q,u,a,r,e){
+        c.hj=c.hj||function(){(c.hj.q=c.hj.q||[]).push(arguments)};
+        c._hjSettings={hjid:a};
+        r=s.getElementsByTagName('head')[0];
+        e=s.createElement('script');e.async=1;
+        e.src=q+c._hjSettings.hjid+u;
+        r.appendChild(e);
+      })(window,document,'https://static.hj.contentsquare.net/c/csq-','.js',5220589);
+    </script>
+
+    <script data-cookieconsent="ignore" data-type="lazy" data-src="data:text/javascript;base64,..." defer></script>
+    <script type="text/javascript" id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="ac1cfd27-af6e-4f4c-b043-e7d4aaa43d53" data-blockingmode="auto" defer></script>
+  </body>
+
+  <slot name="footer-scripts">
+    <script type="text/javascript" src={config.urls.origin + '/js/manifest.js'} id="manifest-js" defer></script>
+    <script type="text/javascript" src={config.urls.origin + '/js/app.js'} id="app-js" defer></script>
+    <script type="text/javascript" src={config.urls.origin + '/js/templates/home.js'} id="template-home-js" defer></script>
+  </slot>
+</BaseLayout>

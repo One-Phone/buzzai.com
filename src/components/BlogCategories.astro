@@ -1,0 +1,53 @@
+---
+interface Props {
+  currentCategory?: string;
+}
+
+const { currentCategory } = Astro.props;
+
+const categories = [
+  { title: "All", href: "/blog/" },
+  { title: "Dating", href: "/category/dating/" },
+  { title: "Family & Friends", href: "/category/family/" },
+  { title: "Fun", href: "/category/fun/" },
+  { title: "Privacy", href: "/category/privacy/" },
+  { title: "Saving Money", href: "/category/saving-money/" },
+  { title: "Shopping", href: "/category/shopping/" },
+  { title: "Travel", href: "/category/travel/" }
+];
+---
+
+<section
+  class="blog-categories bg-block-animation gsap-animation"
+  data-gsap-from='{"y": "20%", "duration": 0.2, "opacity": "0"}'
+  data-gsap-to='{"y": "0", "duration": 0.2, "opacity": "1"}'
+>
+  <div class="blog-categories__container">
+    <span
+      class="title-accordion"
+      data-toggle-class="active"
+      data-toggle-target=".blog-categories__container"
+    >
+      Category
+    </span>
+    <div class="blog-categories__wrapper">
+      <div class="wrapper-links">
+        {
+          categories.map(({ title, href }) => (
+            <a
+              class:list={[
+                "blog-categories__link link-blog",
+                { active: currentCategory === title }
+              ]}
+              target="_self"
+              {title}
+              href={`${href}`}
+            >
+              {title}
+            </a>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</section>
