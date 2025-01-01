@@ -1,0 +1,105 @@
+:root {
+    --breakpoint-xxl: 1920px;
+    --breakpoint-xl: 1440px;
+    --breakpoint-lg: 1280px;
+    --breakpoint-md: 1024px;
+    --breakpoint-md-s: 992px;
+    --breakpoint-sm: 768px;
+    --breakpoint-xs: 512px;
+    --breakpoint-xxs: 390px
+}
+
+@keyframes loading {
+    0% {
+        height: 64px;
+        top: 8px
+    }
+
+    to {
+        height: 32px;
+        top: 24px
+    }
+}
+
+.text-with-image,.wp-block .text-with-image {
+    padding: 110px 0
+}
+
+@media(max-width: 768px) {
+    .text-with-image,.wp-block .text-with-image {
+        padding:40px 0
+    }
+}
+
+.text-with-image__wrapper,.wp-block .text-with-image__wrapper {
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 55px;
+    justify-content: space-between
+}
+
+@media(max-width: 768px) {
+    .text-with-image__wrapper,.wp-block .text-with-image__wrapper {
+        flex-direction:column-reverse;
+        gap: 25px
+    }
+}
+
+.text-with-image__title,.wp-block .text-with-image__title {
+    line-height: 1.25
+}
+
+.text-with-image__text,.wp-block .text-with-image__text {
+    font-size: 28px
+}
+
+@media(max-width: 768px) {
+    .text-with-image__text,.wp-block .text-with-image__text {
+        font-size:22px;
+        font-weight: 300;
+        letter-spacing: -.33px;
+        line-height: 1.2;
+        margin-top: 12px
+    }
+}
+
+.text-with-image__button,.wp-block .text-with-image__button {
+    margin-top: 55px
+}
+
+@media(max-width: 768px) {
+    .text-with-image__button,.wp-block .text-with-image__button {
+        margin-top:24px;
+        width: 100%
+    }
+}
+
+.text-with-image__media,.wp-block .text-with-image__media {
+    animation: animation-img 2s ease-in-out infinite;
+    aspect-ratio: 1.4736/1;
+    border-radius: 40px 40px 0 40px;
+    display: flex;
+    max-width: 560px;
+    overflow: hidden;
+    width: 100%
+}
+
+.text-with-image__media img,.wp-block .text-with-image__media img {
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 100%
+}
+
+@keyframes animation-img {
+    50% {
+        transform: translateY(15px)
+    }
+
+    to {
+        transform: translate(0)
+    }
+}
+
+/*# sourceMappingURL=text-with-image.css.map*/

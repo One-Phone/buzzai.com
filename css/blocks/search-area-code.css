@@ -1,0 +1,129 @@
+:root {
+    --breakpoint-xxl: 1920px;
+    --breakpoint-xl: 1440px;
+    --breakpoint-lg: 1280px;
+    --breakpoint-md: 1024px;
+    --breakpoint-md-s: 992px;
+    --breakpoint-sm: 768px;
+    --breakpoint-xs: 512px;
+    --breakpoint-xxs: 390px
+}
+
+@keyframes loading {
+    0% {
+        height: 64px;
+        top: 8px
+    }
+
+    to {
+        height: 32px;
+        top: 24px
+    }
+}
+
+.search-code-form,.wp-block .search-code-form {
+    margin-top: 172px
+}
+
+.search-code-form__container,.wp-block .search-code-form__container {
+    margin: 0 auto;
+    max-width: 1280px;
+    padding: 0 20px;
+    width: 100%
+}
+
+.search-code-form__wrapper,.wp-block .search-code-form__wrapper {
+    background-color: var(--sk-color-second);
+    border-radius: 40px 40px 0 40px;
+    color: var(--sk-color-second-extra-light);
+    overflow: hidden;
+    padding: 185px 20px;
+    transform: translateY(-150px)
+}
+
+@media(max-width: 1024px) {
+    .search-code-form__wrapper,.wp-block .search-code-form__wrapper {
+        padding:60px 20px
+    }
+}
+
+.search-code-form__text,.wp-block .search-code-form__text {
+    margin-bottom: 30px
+}
+
+.search-code-form__text a,.wp-block .search-code-form__text a {
+    color: inherit;
+    text-decoration: underline
+}
+
+.search-code-form__text a:hover,.wp-block .search-code-form__text a:hover {
+    color: var(--sk-color-third)
+}
+
+.search-code-form .wrap-content,.wp-block .search-code-form .wrap-content {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 989px;
+    width: 100%
+}
+
+@media(max-width: 1024px) {
+    .search-code-form .wrap-content,.wp-block .search-code-form .wrap-content {
+        flex-direction:column
+    }
+}
+
+.search-code-form__title,.wp-block .search-code-form__title {
+    margin-right: 20px;
+    max-width: 400px;
+    width: 100%
+}
+
+@media(max-width: 1024px) {
+    .search-code-form__title,.wp-block .search-code-form__title {
+        margin-right:0;
+        max-width: 550px
+    }
+}
+
+.search-code-form__form,.wp-block .search-code-form__form {
+    display: block;
+    max-width: 550px;
+    width: 100%
+}
+
+@media(max-width: 1024px) {
+    .search-code-form__form,.wp-block .search-code-form__form {
+        margin-top:40px
+    }
+}
+
+.search-code-form__input-wrapper,.wp-block .search-code-form__input-wrapper {
+    position: relative
+}
+
+.search-code-form__input-wrapper input,.wp-block .search-code-form__input-wrapper input {
+    border: none;
+    border-radius: 36px;
+    height: 60px;
+    margin-bottom: 0;
+    padding: 10px 20px 10px 56px;
+    width: 100%
+}
+
+.search-code-form__input-wrapper .btn-search,.wp-block .search-code-form__input-wrapper .btn-search {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    height: 32px;
+    left: 12px;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 32px
+}
+
+/*# sourceMappingURL=search-area-code.css.map*/
